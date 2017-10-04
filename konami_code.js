@@ -5,7 +5,7 @@ let index = 0
 
 //When you're testing the code out in the browser, be sure to call init() to attach the event listener and set everything up
 function init() {
-  document.body.addEventListener('keydown', onKeyDownHandler(event))
+  document.body.addEventListener('keydown', function(e) {onKeyDownHandler(e)})
 }
 
 // This is the function that would be invoked by the event listener.
