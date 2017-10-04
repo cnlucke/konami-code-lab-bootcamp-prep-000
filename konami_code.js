@@ -11,8 +11,8 @@ function init() {
 // This is the function that would be invoked by the event listener.
 function onKeyDownHandler(keystroke) {
   console.log(keystroke)
-  const key = parseInt(keystroke.detail || keystroke.which);
-  
+  const key = parseInt(/*keystroke.detail || */ keystroke.which);
+
   if (key === code[index]) {
     index++;
 
