@@ -7,7 +7,6 @@ let index = 0
 function init() {
   const body = document.body
   
-  }
   body.addEventListener('keydown', onKeyDownHandler(e))
 }
 
