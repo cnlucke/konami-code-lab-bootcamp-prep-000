@@ -9,8 +9,8 @@ function init() {
 }
 
 // This is the function that would be invoked by the event listener.
-function onKeyDownHandler(e) {
-  const key = parseInt(e.detail || e.which);
+function onKeyDownHandler(keystroke) {
+  const key = parseInt(keystroke.detail || keystroke.which);
 
   if (key === code[index]) {
     index++;
